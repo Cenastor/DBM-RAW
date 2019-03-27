@@ -1,0 +1,77 @@
+{
+  "name": "prefix",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "desc": "Change your servers prefix by doing %prefix%prefix [prefix] and the bot will respond using that.\n\nThe prefix can be anything, it doesn't just have to be a symbol!",
+  "_id": "serverprefix",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "2",
+      "varName": "tag",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "0",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "storage": "1",
+      "varName": "tag",
+      "comparison": "1",
+      "value": "\"${server.tag || Files.data.settings.tag || \"\"}\"",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "8",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Prefix is already set to `${serverVars(\"tag\")}` Do `mybot_prefix [newprefix]` to change it.",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "This servers current prefix is `${server.tag}`",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "behavior": "1",
+      "interpretation": "0",
+      "code": "const filePath = require(\"path\").join(\"data\",\"serverPrefixes.json\");\t\n\nlet newTag = serverVars(\"tag\");\n\nif(Array.isArray(this.prefixes)){ \n  console.log(\"Old version serverPrefixes.json detected.  Please remove serverPrefixes.json and restart your bot otherwise setting new prefixes will not work!\")\n  newTag = tag;\n}\n\nserver.tag = newTag; \nBot.prefixes[server.id] = newTag\t   \nrequire(\"fs\").writeFileSync(filePath, JSON.stringify(Bot.prefixes));\nthis.callNextAction(cache);",
+      "storage": "0",
+      "varName": "",
+      "name": "Run Script"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "The prefix has been changed to `${serverVars(\"tag\")}`",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_aliases": [],
+  "comType": "0"
+}
