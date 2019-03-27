@@ -1,0 +1,63 @@
+{
+  "name": "BotStartNotice",
+  "temp": "",
+  "event-type": "1",
+  "actions": [
+    {
+      "comment": "Change server and channel ID's to go with your server",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "info": "1",
+      "find": "console-log",
+      "storage": "1",
+      "varName": "send",
+      "name": "Find Channel"
+    },
+    {
+      "title": "Bot is now alive!",
+      "author": "",
+      "color": "",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "server-alive",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "server-alive",
+      "message": "```css\nBot has been restarted you can now use commands\nuse {prefix}bothelp for more help```",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "server-alive",
+      "message": "Created by Cenastor|with DBM 2019",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "server-alive",
+      "channel": "5",
+      "varName2": "send",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "505906663295942680",
+      "name": "Store Server Info"
+    }
+  ],
+  "_id": "jNTSy"
+}
