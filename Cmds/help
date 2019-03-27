@@ -1,0 +1,301 @@
+{
+  "name": "help",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "isCVQ",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "number",
+      "name": "Store Command Params"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**Main Help Message**\n🔳 - Main page\n⚙ - Config\n📷 - Image\n✨ - Miscellaneous\n🔨 - Moderation\nFor navigating trought bot commands use the reactions below.\n",
+      "storage": "1",
+      "varName2": "msg",
+      "name": "Send Message"
+    },
+    {
+      "comment": "You can change the emotes used just make sure you change them all.",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "4",
+      "varName2": "🔳",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "4",
+      "varName2": "⚙",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "4",
+      "varName2": "📷",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "4",
+      "varName2": "✨",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "4",
+      "varName2": "🔨",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "1",
+      "find": "🔳",
+      "storage": "1",
+      "varName2": "firstreaction",
+      "name": "Find Reaction"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "1",
+      "find": "⚙",
+      "storage": "1",
+      "varName2": "secondreaction",
+      "name": "Find Reaction"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "1",
+      "find": "📷",
+      "storage": "1",
+      "varName2": "thirdreaction",
+      "name": "Find Reaction"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "1",
+      "find": "✨",
+      "storage": "1",
+      "varName2": "forthreaction",
+      "name": "Find Reaction"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "1",
+      "find": "🔨",
+      "storage": "1",
+      "varName2": "fiftreaction",
+      "name": "Find Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "number",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Variable"
+    },
+    {
+      "time": "250",
+      "measurement": "0",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "number",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "number",
+      "comparison": "4",
+      "value": "80",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "name": "Clear reactions from message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "author",
+      "reaction": "1",
+      "varName2": "firstreaction",
+      "iftrue": "2",
+      "iftrueVal": "25",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If User Reacted"
+    },
+    {
+      "member": "1",
+      "varName": "author",
+      "reaction": "1",
+      "varName2": "secondreaction",
+      "iftrue": "2",
+      "iftrueVal": "28",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If User Reacted"
+    },
+    {
+      "member": "1",
+      "varName": "author",
+      "reaction": "1",
+      "varName2": "thirdreaction",
+      "iftrue": "2",
+      "iftrueVal": "31",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If User Reacted"
+    },
+    {
+      "member": "1",
+      "varName": "author",
+      "reaction": "1",
+      "varName2": "forthreaction",
+      "iftrue": "2",
+      "iftrueVal": "34",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If User Reacted"
+    },
+    {
+      "member": "1",
+      "varName": "author",
+      "reaction": "1",
+      "varName2": "fiftreaction",
+      "iftrue": "2",
+      "iftrueVal": "37",
+      "iffalse": "2",
+      "iffalseVal": "15",
+      "name": "Check If User Reacted"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "message": "**Main Help Message**\nFor navigating trought bot commands use the reactions below.\n🔳 - This page\n⚙ - Config\n📷 - Image\n✨ - Miscellaneous\n🔨 - Moderation",
+      "name": "Edit Message"
+    },
+    {
+      "reaction": "1",
+      "varName": "firstreaction",
+      "member": "1",
+      "varName2": "",
+      "name": "Remove Reaction"
+    },
+    {
+      "call": "14",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "message": "**⚙ - Config**\n```\ncsnipe [#channel] - returns info on mentioned channel\nmsnipe [@user] - return info on mentioned user\nrequest - request a feature\nwarnings [user] - check the amount of warnings for a user\npoll [question] - Start a poll in a channel\nprefix - changes the server prefix\nrolemenu - setup reaction roles\nsetuptch [channel]- setup reaction role channel\nmydata - send in DM what information the bot has saved for the user\n```\n",
+      "storage2": "1",
+      "varName2": "",
+      "name": "Edit Message"
+    },
+    {
+      "reaction": "1",
+      "varName": "secondreaction",
+      "member": "1",
+      "varName2": "",
+      "name": "Remove Reaction"
+    },
+    {
+      "call": "14",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "message": "**📷 - Image**\n```\nmc [text] - creats a minecraft achevment\nusercard - Brind up a usercard for user that used the command\nchangemymind [text] - Returns a ChangeMyMind Meme\ntrumptweet [text] Returns a fake trump tweet\nemojilist - returns with a list of the server emotes\nflip - flips the table\ncatfact - random cat fact\npanda - show a random panda pic\nkanna - Make a Kanna Meme!\nhug - returns a hug gif\npat - returns a random pat meme\nlenny - returns a random lenny meme\nrandomemoji - returns a random emoji\nemolets - a-z in emotes\nclyde [text] - set text to a meme\n```",
+      "storage2": "1",
+      "varName2": "",
+      "name": "Edit Message"
+    },
+    {
+      "reaction": "1",
+      "varName": "thirdreaction",
+      "member": "1",
+      "varName2": "",
+      "name": "Remove Reaction"
+    },
+    {
+      "call": "14",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "message": "**✨ - Miscellaneous**\n```\nsteamstats - send you a DM of steam server stats\nreport [user] [report] - sends report to #report channel\nwarnings [user] - shows amount of warnings for that user dont put the user to find your current amount of warnings\ndonate - give you a link if you would like to help support\nbadges [user] - checks the users status with the bot\nroll - roll the dice\nflip - flips the table\ndadjoke - returns a random dad joke\njoke - returns a random joke\nimdb [movie title] -  returns infomation about movie mentioned\n8ball [question] - ask 8ball a question replays with yes or no\ninvite - creates invite for server and channel command is ran in\ninvitebot - returns a invite for this bot to join your server\n```",
+      "storage2": "1",
+      "varName2": "",
+      "name": "Edit Message"
+    },
+    {
+      "reaction": "1",
+      "varName": "forthreaction",
+      "member": "1",
+      "varName2": "",
+      "name": "Remove Reaction"
+    },
+    {
+      "call": "14",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "message": "**🔨 - Moderation**\n```\ncsnipe [#channel] - give infommation about mentioned channel\nmsnipe [@user] - give info about tagged user\nroles - lists current roles on the server\nnews [#channel] [text] - Send news to a channel\nwarn [user] [reason] - warns a user\nclearwarnings [user] - clears warnings for that user\nmute [user] [reason] - mutes user with reason\nunmute [user] - unmute the mentioned user\nkick [user] [reason] - kicks user with reason\nban [user] [reason] -bans user with reason\nmultiban [user1] [user2] [user3] - Ban up to 5 users at once\noreport [user] [report] - send report to server owner do not spam\npruge [number] - removes up to 100 msgs from chat cants be older the 14 days old\ndelete [nummber] - does the same as purge\\\nbancheck @user - Check the ban status of a user\n```",
+      "storage2": "1",
+      "varName2": "",
+      "name": "Edit Message"
+    },
+    {
+      "reaction": "1",
+      "varName": "fiftreaction",
+      "member": "1",
+      "varName2": "",
+      "name": "Remove Reaction"
+    },
+    {
+      "call": "14",
+      "name": "Jump to Action"
+    }
+  ],
+  "_timeRestriction": 10,
+  "comType": "0"
+}
