@@ -1,0 +1,66 @@
+{
+  "name": "delbadge",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "bVOFo",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "2",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "❗ Please specify a member using `delbadge @user badgename`\nFor example `delbadge @Cenastor#0420 support`\nCurrent Badges\n`\n🔰Owner\n❓Support\n🎓Developer\n🌀Early-Supporter\n🔨Contributer\n`",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "member",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "0",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "badge-to-add",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "${tempVars(\"badge-to-add\")}",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "✅ Removed **${tempVars(\"badge-to-add\")}** from ${tempVars(\"member\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}
