@@ -1,0 +1,28 @@
+
+{
+  "name": "botname",
+  "permissions": "NONE",
+  "restriction": "4",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "botname",
+      "name": "Store Command Params"
+    },
+    {
+      "username": "${tempVars(\"botname\")}",
+      "name": "Set Bot Username"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ],
+  "_id": "MMJII"
+}

@@ -1,0 +1,212 @@
+{
+  "name": "botinfo",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "GlPVX",
+  "actions": [
+    {
+      "title": "Bot Info",
+      "author": "",
+      "color": "",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "botinfoembed",
+      "name": "Create Embed Message"
+    },
+    {
+      "info": "3",
+      "storage": "1",
+      "varName2": "guildamount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "4",
+      "storage": "1",
+      "varName2": "useramount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "10",
+      "storage": "1",
+      "varName2": "channelamount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "11",
+      "storage": "1",
+      "varName2": "emojiamount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "32",
+      "storage": "1",
+      "varName2": "commandamount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "33",
+      "storage": "1",
+      "varName2": "eventamount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "9",
+      "storage": "1",
+      "varName2": "voiceconnectionsamount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "28",
+      "storage": "1",
+      "varName2": "botos",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "29",
+      "storage": "1",
+      "varName2": "CPUusageMB",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "35",
+      "storage": "1",
+      "varName2": "CPUCoreAmount",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "36",
+      "storage": "1",
+      "varName2": "TotalMemoryGB",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "37",
+      "storage": "1",
+      "varName2": "TotalMemoryMB",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "38",
+      "storage": "1",
+      "varName2": "AvailableMemoryGB",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "39",
+      "storage": "1",
+      "varName2": "AvailableMemoryMB",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "40",
+      "storage": "1",
+      "varName2": "AvailableMemory%",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "41",
+      "storage": "1",
+      "varName2": "UsedMemoryGB",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "42",
+      "storage": "1",
+      "varName2": "UsedMemoryMB",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "43",
+      "storage": "1",
+      "varName2": "UsedMemory%",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "2",
+      "storage": "1",
+      "varName2": "Ping",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "5",
+      "storage": "1",
+      "varName2": "PingRounded",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "21",
+      "storage": "1",
+      "varName2": "discordjsversion",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "31",
+      "storage": "1",
+      "varName2": "nodejsversion",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "23",
+      "storage": "1",
+      "varName2": "udays",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "24",
+      "storage": "1",
+      "varName2": "uhours",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "25",
+      "storage": "1",
+      "varName2": "umins",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "26",
+      "storage": "1",
+      "varName2": "usecs",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "title": "Bot Info",
+      "author": "",
+      "color": "",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "botinfoembed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "botinfoembed",
+      "fieldName": "Information:",
+      "message": "Guild Amount: ${tempVars(\"guildamount\")}\nUser Amount: ${tempVars(\"useramount\")}\nChannel Amount: ${tempVars(\"channelamount\")}\nEmoji Amount: ${tempVars(\"emojiamount\")}\nCommand Amount: ${tempVars(\"commandamount\")}\nEvent Amount: ${tempVars(\"eventamount\")}\nVoice Connections: ${tempVars(\"voiceconnectionsamount\")}\nBot OS: ${tempVars(\"botos\")}\nCPU Usage in MB: ${tempVars(\"CPUusageMB\")}\nCPU Core Count: ${tempVars(\"CPUCoreAmount\")}\nTotal Memory GB: ${tempVars(\"TotalMemoryGB\")}\nTotal Memory MB: ${tempVars(\"TotalMemoryMB\")}\nAvailable Memory GB: ${tempVars(\"AvailableMemoryGB\")}\nAvailable Memory MB: ${tempVars(\"AvailableMemoryMB\")}\nAvailable Memory %: ${tempVars(\"AvailableMemory%\")}\nUsed Memory GB: ${tempVars(\"UsedMemoryGB\")}\nUsed Memory MB: ${tempVars(\"UsedMemoryMB\")}\nUsed Memory %: ${tempVars(\"UsedMemory%\")}\nPing: ${tempVars(\"Ping\")} ms\nRounded Ping: ${tempVars(\"PingRounded\")} ms\nDiscordJS Version: ${tempVars(\"discordjsversion\")}\nNodeJS Version: ${tempVars(\"nodejsversion\")}\nUptime: ${tempVars(\"udays\")}d : ${tempVars(\"uhours\")}h : ${tempVars(\"umins\")}m : ${tempVars(\"usecs\")}s",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "botinfoembed",
+      "channel": "0",
+      "varName2": "",
+      "comType": "0",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    }
+  ],
+  "_aliases": []
+}

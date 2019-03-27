@@ -1,0 +1,134 @@
+{
+  "name": "leaveserverid",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "FXJCo",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "6",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "This command can only be executed by the bot owner!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Invalid Params!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "params",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "params",
+      "comparison": "6",
+      "value": "([A-Z])|([a-z])",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "The ID must be in numbers!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"params\")}",
+      "storage": "1",
+      "varName": "sv",
+      "name": "Find Server"
+    },
+    {
+      "storage": "1",
+      "varName": "sv",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "I couldn't find any server with that ID!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "1",
+      "varName": "sv",
+      "info": "2",
+      "storage": "1",
+      "varName2": "name",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "1",
+      "varName": "sv",
+      "name": "Leave Server"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "I've left **${tempVars(\"name\")}**!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0",
+  "_aliases": [
+    "lsid"
+  ]
+}
