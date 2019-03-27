@@ -1,0 +1,134 @@
+{
+  "name": "messages_switch",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "info": "3",
+      "storage": "3",
+      "varName2": "totalguilds",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "4",
+      "storage": "3",
+      "varName2": "totalusers",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "10",
+      "storage": "3",
+      "varName2": "totalchannels",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "32",
+      "storage": "3",
+      "varName2": "totalcommands",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "2",
+      "varName2": "members.human",
+      "name": "Store Server Info"
+    },
+    {
+      "comment": "Change the time below to what ever you would like.",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "messagetime",
+      "changeType": "0",
+      "value": "240",
+      "name": "Control Variable"
+    },
+    {
+      "activity": "2",
+      "nameText": "for ${globalVars(\"totalcommands\")} Cmds from ${globalVars(\"totalusers\")} users on ${globalVars(\"totalguilds\")} server/s",
+      "url": "http://twitch.tv/cenastoryn",
+      "stat": "0",
+      "name": "Set Bot Activity"
+    },
+    {
+      "time": "${tempVars(\"messagetime\")}",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "activity": "2",
+      "nameText": "all the time! 24/7 -invitebot to invite to your own guild!",
+      "url": "http://twitch.tv/one6fire",
+      "stat": "0",
+      "name": "Set Bot Activity"
+    },
+    {
+      "comment": "Create more with the incased blocks copy and repeat",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "time": "${tempVars(\"messagetime\")}",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "activity": "1",
+      "nameText": "for ${globalVars(\"totalcommands\")} Cmds from ${globalVars(\"totalusers\")} users on ${globalVars(\"totalguilds\")} server/s",
+      "url": "",
+      "stat": "0",
+      "name": "Set Bot Activity"
+    },
+    {
+      "comment": "------------------------------------------------------------------------------",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "time": "${tempVars(\"messagetime\")}",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "activity": "3",
+      "nameText": "👇Make sure to follow the real Cenastor on Twitch!👇",
+      "url": "http://twitch.tv/cenastoryn",
+      "stat": "0",
+      "name": "Set Bot Activity"
+    },
+    {
+      "time": "${tempVars(\"messagetime\")}",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "activity": "2",
+      "nameText": "-badges @user to get users bot wide badge varify there status!",
+      "url": "",
+      "stat": "0",
+      "name": "Set Bot Activity"
+    },
+    {
+      "time": "${tempVars(\"messagetime\")}",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "2",
+      "varName": "members.human",
+      "comparison": "4",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "1",
+      "iffalse": "2",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    }
+  ],
+  "event-type": "1",
+  "_id": "HNRjA"
+}
