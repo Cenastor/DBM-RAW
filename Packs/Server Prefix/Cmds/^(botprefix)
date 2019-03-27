@@ -1,0 +1,22 @@
+{
+  "name": "^(botprefix)",
+  "permissions": "KICK_MEMBERS",
+  "restriction": "1",
+  "_id": "calls_prefix",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "tag",
+      "name": "Store Command Params"
+    },
+    {
+      "source": "serverprefix",
+      "type": "true",
+      "name": "Call Command/Event"
+    }
+  ],
+  "_aliases": [],
+  "comType": "2"
+}
