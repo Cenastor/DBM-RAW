@@ -1,0 +1,61 @@
+
+{
+  "name": "Multiple Bot Owners",
+  "temp": "",
+  "event-type": "1",
+  "_id": "weEij",
+  "actions": [
+    {
+      "comment": "For DBM Version 1.3.0+",
+      "color": "#0bf416",
+      "name": "Comment"
+    },
+    {
+      "storage": "3",
+      "varName": "owners",
+      "name": "Create List"
+    },
+    {
+      "comment": "items in this list are bot owners",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "storage": "3",
+      "varName": "owners",
+      "addType": "0",
+      "position": "",
+      "value": "\"498687373085769739\"",
+      "name": "Add Item to List"
+    },
+    {
+      "storage": "3",
+      "varName": "owners",
+      "addType": "0",
+      "position": "",
+      "value": "\"userid2\"",
+      "name": "Add Item to List"
+    },
+    {
+      "storage": "3",
+      "varName": "owners",
+      "addType": "0",
+      "position": "",
+      "value": "\"userid3\"",
+      "name": "Add Item to List"
+    },
+    {
+      "comment": "This Run Script alters the standard check conditions function",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "behavior": "1",
+      "interpretation": "1",
+      "code": "// Created by General Wrex, if any questions arise please\n// find me on DBM Raw Data #support channel.\nlet owners = globalVars(\"owners\");\nowners.push(Files.data.settings.ownerId)\n\nActions.checkConditions = function(msg, cmd) {\n\tconst isServer = Boolean(msg.guild && msg.member);\n\tconst restriction = parseInt(cmd.restriction);\n\tconst permissions = cmd.permissions;\n\tswitch(restriction) {\n\t\tcase 0:\n\t\t\tif(isServer) {\n\t\t\t\treturn this.checkPermissions(msg, permissions);\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\tcase 1:\n\t\t\treturn isServer && this.checkPermissions(msg, permissions);\n\t\tcase 2:\n\t\t\treturn isServer && msg.guild.owner === msg.member;\n\t\tcase 3:\n\t\t\treturn !isServer;\n\t\tcase 4:\n\t\t\treturn owners.length > 0 && owners.includes(msg.author.id)\n\t\tdefault:\n\t\t\treturn true;\n\t}\n};\n\nconsole.log('[Overwrites](Multiple Bot Owners) Actions.checkConditions Loaded');",
+      "storage": "0",
+      "varName": "",
+      "name": "Run Script"
+    }
+  ]
+}
