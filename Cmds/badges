@@ -1,0 +1,252 @@
+{
+  "name": "badges",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "bVOFo",
+  "actions": [
+    {
+      "FirstNumber": "${globalVars(\"sentMsgs\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "3",
+      "varName": "sentMsgs",
+      "name": "Basic Math Operation"
+    },
+    {
+      "storage": "3",
+      "varName": "sentMsgs",
+      "name": "Save Variable"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "condition": "1",
+      "comparison": "2",
+      "value": "0",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "❗ Please specify a member using `badges @user`",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "member",
+      "name": "Store Command Params"
+    },
+    {
+      "title": "Badges of ${tempVars(\"member\").user.tag}",
+      "author": "",
+      "color": "",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "owner",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🔰 Bot Owner",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "support",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "❓ Support",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "dev",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🎓 Bot Developer",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "early-supporter",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "💯 Early Supporter",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "patreon",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🔥 Patreon",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "contributer",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🔨 Bot Contributer",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "staff",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🌟 Bot Staff",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "vip",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🏆 VIP User",
+      "message": "",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Total Messages Sent: ${globalVars(\"sentMsgs\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0",
+  "_timeRestriction": 60,
+  "customData": {
+    "Command Info": {
+      "category": "User",
+      "description": "Check users bot badges",
+      "include": "Yes"
+    }
+  }
+}
