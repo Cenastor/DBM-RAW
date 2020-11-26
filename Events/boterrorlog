@@ -1,0 +1,70 @@
+{
+  "name": "BotErrorLog",
+  "temp": "dbmerror",
+  "event-type": "37",
+  "_id": "xXjKm",
+  "actions": [
+    {
+      "info": "0",
+      "find": "731007224133976104",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Find Channel"
+    },
+    {
+      "comment": "⇧ Put your log-channel id here ⇧",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "title": "Error Log",
+      "author": "",
+      "color": "#6e0202",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed1",
+      "message": "An error has occurred",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed1",
+      "fieldName": "Error Type",
+      "message": "```${tempVars(\"dbmerror\")}```",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed1",
+      "fieldName": "Java Error",
+      "message": "```${tempVars(\"javaerror\")}```",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed1",
+      "message": "",
+      "footerIcon": "https://freeiconshop.com/wp-content/uploads/edd/error-flat.png",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed1",
+      "channel": "5",
+      "varName2": "channel",
+      "name": "Send Embed Message"
+    }
+  ],
+  "temp2": "javaerror"
+}
