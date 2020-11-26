@@ -1,0 +1,146 @@
+{
+  "name": "currentbadges",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "uvQjx",
+  "actions": [
+    {
+      "FirstNumber": "${globalVars(\"sentMsgs\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "3",
+      "varName": "sentMsgs",
+      "name": "Basic Math Operation"
+    },
+    {
+      "storage": "3",
+      "varName": "sentMsgs",
+      "name": "Save Variable"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "title": "Current Badge List",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🔰 Bot Owner",
+      "message": "There will only be myself with this badge @Cenastor",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "❓ Support",
+      "message": "Helping you with problems regarding this bot",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🎓 Bot Developer",
+      "message": "One of the Developers of Moderator. You have them to thank.",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "💯 Early Supporter",
+      "message": "Help support the bot in its early stages.",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🔥 Patreon",
+      "message": "Is or once was a patreon on\n[Click Here](http://patreon.com/cenastor) to become a patreon.",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🔨 Bot Contributer",
+      "message": "Contrubuted to features of this bot.",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🌟 Bot Staff",
+      "message": "Staff member on our offical support server.",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Placeholder",
+      "message": "This is just a placeholder for another badge later on.",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "🏆 VIP User",
+      "message": "VIP! This user has supported the bots growth and earned themself some perks.",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Total Message Sent: ${globalVars(\"sentMsgs\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0",
+  "_timeRestriction": 60,
+  "customData": {
+    "Command Info": {
+      "category": "User",
+      "description": "Check users bot badges",
+      "include": "Yes"
+    }
+  },
+  "_aliases": [
+    "cbadges"
+  ]
+}
